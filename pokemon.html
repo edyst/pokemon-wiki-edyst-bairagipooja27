@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <style>
+         * {
+            font-size: 16px;
+            font-family: Avenir-Next, Roboto, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        /* css for header */
+        .container-1{
+            display: flex;
+            padding: 5px 5px;
+            background-color: rgb(242, 250, 249);
+        }
+        .A001{
+            width: 30%;
+            padding-left: 10px;
+            padding-top: 8px;
+        }
+        .B001{
+            width: 70%;
+        }
+        .C001{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin: 0px 5px;
+        }
+        #a1{
+            color: black;
+            display: block;
+            padding:10px;
+        }
+        #a1:hover{
+            background-color: rgb(134, 114, 127);
+            border-radius: 100%;
+            color: rgb(226, 128, 37);
+            
+        }
+        .btn1{
+            color: white;
+            background-color: orangered;
+            padding:0px 25px;
+            margin-top: 10px;
+            border: none;
+        }
+        .E001{
+            width:18px;
+            margin-right:10px;
+            margin-top: 2px;
+        }
+        .D001{
+           list-style: none;
+        }
+        .fa-caret-down{
+            font-size: 20px;
+            margin-left: 5px;
+        }
+        .D001{
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+            display: none;
+            border-radius: 10px;
+            padding: 2px 2px;
+        }
+        nav .C001 li:hover .D001{
+        display: block;
+        padding: 10px;
+        color: rgb(92, 10, 64);
+        background-color: wheat;
+        }
+
+
+         /* css for homepage  */
+
+
+         .home-page {
+            display: flex;
+            background-image: url("welcom.jpg");
+            background-size: cover;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            
+            
+        }
+
+        .container-2 {
+           
+            padding-bottom: 90px;
+            padding-left: 160px;
+            padding-right: 160px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding-top: 50px;
+
+        }
+
+        #b1 {
+
+            font-size: 90px;
+            margin-bottom:16px ;
+            
+        }
+
+        #b2 {
+            font-size: 33px;
+            margin-bottom:10px;
+
+        }
+
+        .btn2{
+
+            background-color: #4992ca;
+            color: white;
+            border: none;
+            padding: 10px 70px;
+            font-size: 15px;
+            margin-bottom:8px ;
+
+        }
+
+        .btn3{
+
+            background-color: #0000;
+            color: white;
+            border: none;
+            border: 1px solid white;
+            padding: 15px 40px;
+            font-size: 15px;
+            margin-bottom:8px;
+            
+            
+        }
+
+        .btn4{
+            background-color: white;
+            border-radius: 15px;
+            font-size: 15px;
+            padding: 15px 10px;
+            border: none;
+        }
+
+        .link {
+            font-size: small;
+        }
+
+        .A002 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        #b3{
+            margin-top: 10px;
+        }
+
+         /* css for pocket-monster-section  */
+
+        .pocket-monster-section {
+            Background-Color: #4992ca;
+            font-family: Avenir-Next, Roboto, sans-serif;
+            color: white;
+           
+        }
+        .container-3{
+            padding-left: 160px;
+            padding-right: 160px;
+            padding-bottom: 60px;
+            padding-top: 20px;
+
+        }
+        .A003{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .B003{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        
+        }
+        .C003{
+            padding-top:20px ;
+            padding-bottom: 20px;
+        }
+        
+
+        
+        #c1{
+            font-size: 45px;
+          
+          
+
+        }
+        #c2{
+            font-size: 30px;
+         
+            padding-bottom: 20px;
+        }
+
+        .fa-water{
+            font-size: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .fa-fire{
+            font-size: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .fa-leaf{
+            font-size: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        /* css for statics on pokemon go  */
+        .container-4{
+
+            padding-top: 40px;
+            padding-left: 160px;
+            padding-right: 160px;
+
+        }
+        #d1{
+            font-size: 45px;
+            text-align: center;
+
+        }
+        #d2{
+            font-size: 30px;
+
+        }
+        .A004{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            justify-content: space-between;
+
+        }
+        .B004{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        /* css for pokemon 1 to pokemon 4(container-5) */
+
+        .container-5{
+            padding-top: 40px;
+            padding-left: 160px;
+            padding-right: 160px;
+            padding-bottom: 10px;
+            font-family: Avenir-Next,Roboto,sans-serif;
+
+        }
+        #e1{
+            text-align: center;
+            font-size: 30px;
+        }
+        #e2{
+            
+            width: 150px;
+            border-radius: 50%;
+
+        }
+        #e3{
+            
+            width: 120px;
+
+        }
+        .A005{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .B005{
+            display: flex;
+            align-items: center;
+            font-weight: 100;
+            font-size: 200px;
+            
+
+
+        }
+        .F005{
+            display: flex;
+            align-items: center;
+            font-weight: 100;
+            font-size: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+        .C005{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-right: 30px;
+        }
+        .D005{
+            font-size: 20px;
+            font-weight: 100;
+            color: rgb(70, 70, 69);
+        }
+        .E005{
+            font-size: 15px;
+        }
+
+        /* css for Q and A(container-6) */
+        .container-6 {
+            padding: 40px 160px;
+            color: white;
+            Background-Color: #4992ca;
+            
+
+        }
+        #f1{
+            font-size: 45px;
+            align-items: center;
+            text-align: center;
+        }
+        .A006{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+        }
+        .B006{
+            display: flex;
+         
+            
+        }
+        .C006{
+            padding-left: 100px;
+        }
+        .D006{
+            padding-bottom: 10px;
+          
+        }
+
+        /* css for .pokemon-battle  */
+        .pokemon-battle{
+            margin:20px 230px;
+        }
+        #g1{
+            font-size: 45px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        #g2{
+            margin-bottom:15px;
+            text-align: center;
+        }
+        .Z007{
+            display: flex;
+        }
+        .A007{
+            flex: 1;
+            line-height: 27px;
+            margin-right: 5px;
+        }
+        .C007{
+            flex:2;
+        }
+        #g4{
+            margin-top:15px;
+            color: rgb(133, 127, 127);
+        }
+        table{
+            border:1px solid rgb(133, 127, 127);
+            border-collapse: collapse;
+        }
+        th{
+            border:1px solid rgb(133, 127, 127);
+            padding:10px;
+            text-align: start;
+            color:black;
+        }
+        tbody{
+            color: rgb(133, 127, 127);
+        }
+        td{
+            border:1px solid rgb(133, 127, 127);
+            padding:10px;
+            
+            
+        }
+        #g3{
+            margin-top: 20px;
+        }
+        #g5{
+            font-size: 19px;
+            text-align: center;
+            color: #4992ca;
+            font-weight: 500;
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+        .B007{
+            text-align: center;
+        }
+        .btn5{
+            margin-top: 10px;
+            padding: 10px 75px;
+            background:#4992ca;
+            color: white;
+            border:none;
+            
+            font-size: small;
+        }
+        /* css for container-8  */
+        
+        
+        .know-more1 {
+            background-color: #424242;
+                        color: white;
+                        padding-bottom: 60px;
+                        padding-top: 50px;
+
+}
+
+.btn6 {
+background-color: #0000;
+color: white;
+border: 1px solid white;
+padding: 15px 70px;
+font-size: small;
+
+
+
+}
+.A008{
+    padding-top: 10px;
+    text-align: center;
+}
+#i1{
+    text-align: center;
+    font-size: 45px;
+}
+/* css for pokemon card(container-9) */
+.pokemon-card{
+    padding-bottom: 10px;
+}
+#z1{
+   
+    text-align: center;
+    font-size: 45px;
+    padding-top: 30px;
+    color: rgb(141, 140, 138);
+    
+}
+.A009{
+    text-align: center;
+    padding-top:5px ;
+    padding-bottom: 10px;
+}
+.B009{
+    text-align: center;
+}
+.C009{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.D009{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.cards_hold {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+
+        .card-c {
+            
+            width: 200px;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            margin: 8px;
+            line-height: 24px;
+            
+        }
+        .card-head {
+            margin-bottom: 0;
+            border-bottom: 1px solid;
+            border-top: 16px solid;
+            border-top-color: #4992ca;
+            background-color: rgba(0, 0, 0, 0.03);
+            border-bottom-color: rgba(0, 0, 0, 0.125);
+        }
+        .card-bd {
+            padding: 10px;
+            
+        }
+
+
+
+        
+
+        
+       
+
+
+
+
+ /* css for container10 (pokemon trainer section) */
+ 
+
+.pokemon-trainers {
+    padding-top: 30px;
+           
+            font-family: Avenir-Next, Roboto, sans-serif;
+            font-weight: 100;
+            Background-Color: #4992ca;
+            color: white;
+        }
+        .container-10{
+            display: flex;
+            
+            align-items: center; 
+            flex-direction: column;
+            padding:0px 200px;
+            
+
+        }
+        #j1{
+            font-size: 45px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .A0010{
+            width: 120px;
+            border-radius: 50%;
+
+        }
+        .B0010{
+            width: 120px;
+            
+
+        }
+        
+        .C0010{
+            display: flex;
+           padding-top: 10px;
+           padding-bottom: 30px;
+            
+
+        }
+        .D0010{
+            display: flex;
+            padding-left: 20px;
+            text-align: center;
+            flex-direction: column;
+            padding-right: 30px;
+        }
+        .E0010{
+            font-size: 15px;
+        }
+        #j2{
+            font-size: 22px;
+
+        }
+
+        /* css for generation card */
+        .generation{
+           margin: 0px 220px;
+           color: black;
+            
+        }
+        .B0011 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+        #k1{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            color: rgb(133, 127, 127);
+        }
+
+
+        .card {
+            width: 1000px;
+          
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            margin: 8px;
+            line-height: 20px;
+            
+            
+        }
+
+        .D0011 {
+            font-weight: 700;
+            height: 45px;
+            color: #3c3333;
+            text-align: left;
+            font-size: 2rem;
+            line-height: 1.2;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .body {
+            padding: 10px;
+            
+        }
+
+        .C0011 {
+            margin-bottom: 0;
+            border-bottom: 1px solid;
+            border-top: 16px solid;
+            border-top-color: #4992ca;
+            background-color: rgba(0, 0, 0, 0.03);
+            border-bottom-color: rgba(0, 0, 0, 0.125);
+           
+        }
+        .A0011{
+           margin-left: 20px;
+            padding-bottom: 20px;
+            
+        }
+        .text{
+            margin-bottom: 15px;
+            
+            
+        }
+
+        .generation {
+            padding-left: 120px;
+            padding-right: 120px;
+
+        }
+
+        /* css for email input pokemon  */
+        .email-pokemon {
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-top: 20px;
+            padding-bottom: 70px;
+            background-color: #424242;
+            color: white;
+
+        }
+
+        .input {
+            font-size: 13px;
+            
+            padding: 10px 10px;
+            width: 30%;
+
+
+
+        }
+
+        .B0012 {
+            background-color: #0000;
+            color: white;
+            border: 2px solid #fff;
+            padding: 10px 70px;
+            font-size: 13px;
+            
+
+        }
+        #l1{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .A0012{
+            text-align: center;
+
+        }
+
+          /* css for pokemon games  container12 */
+
+          .pokemon-games{
+            padding-top:30px;
+             padding-bottom:10px;
+             margin: 0px 220px;
+
+        } 
+        #m1{
+             text-align: center; 
+            font-size: 30px;
+            margin-bottom: 30px; 
+            color: rgb(158, 158, 157);
+        }
+        .container12{
+            display: grid;
+            justify-content: center;
+            grid-template-columns:1fr 1fr 1fr ;
+        }
+        .logo1{
+            width: 220px;
+            height: 200px;
+        }
+        .logo2{
+            width: 120px;
+            height: 200px;
+        }
+        .logo3{
+            width: 200px;
+            height: 200px;
+        }
+        #m2{
+            text-align: center;
+            /* padding-bottom: 10px; */    
+        }
+        .A0013{
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            margin-left: 8px;
+            /* margin-right: 8px; */
+
+        }
+        .C0013{
+            text-align: center;
+        }
+        .btn7{
+            border: none;
+            color: white;
+            background-color: #4992ca;
+            padding: 7px 57px;
+        }
+        .B0013{
+            text-align: center;
+            padding-bottom:20px;
+        }
+/* css for designers container13 */
+        .designers{
+            padding: 30px 200px;
+            background-color: #4992ca;
+            color: white;
+        }
+        #n1{
+            font-size:45px ;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .container13{
+            display: flex;
+            justify-content: space-between;
+        }
+        .B0014{
+            width:200px;
+            border-radius:50%;
+        }
+        #B0014{
+            border-radius: 50%;
+        }
+        #n2{
+            text-align: center;
+            font-size: 30px;
+            padding-bottom: 5px;
+            font-weight: 90;
+        }
+        .C0014{
+            text-align: center;
+            padding-bottom: 5px;
+            font-size: 18px;
+        }
+        .E0014{
+            text-align: center;
+        }
+        .A0114{
+            margin: 0px 10px 0px 0px;
+        }
+        .A0115{
+            margin: 0px 10px 0px 0px;
+        }
+        .D0014{
+            font-weight: 600;
+        }
+        
+         /* css for logos container14  */
+         .logos {
+             padding: 20px 60px;
+            
+
+
+        }
+
+        .container14 {
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            width: 100%;
+            text-align: center;
+
+
+        }
+        #o1{
+            text-align: center;
+            font-size: 30px;
+            color: rgb(150, 147, 150);
+            padding-bottom: 20px;
+           
+
+        }
+        .A0015{
+            text-align: center;
+            padding-bottom: 5px;
+
+
+        }
+        .B0015{
+           width: 150px;
+
+        }
+        .C0015{
+            text-align: center;
+            margin: 0px 75px;
+           
+
+        }
+
+        /* css for know-more2 container15  */
+        .know-more2 {
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            background-color: #4992ca;
+            color: white;
+        }
+        #p1{
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 45px;
+            text-align: center;
+
+        }
+        .A0016{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+        .btn8{
+            background-color: #4992ca;
+            color: white;
+            border: 1px solid white;
+            padding:5px 57px;
+
+        }
+
+        
+
+        /* css for footer  */
+        .container-16 {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+
+
+
+        }
+        .A0017{
+            align-items: center;
+            text-align: center;
+        }
+
+        footer {    
+            padding-bottom: 0px;
+            padding-top: 40px;
+            background-color: #090716;
+            color: rgb(165, 162, 162);
+            line-height: 25px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .fab{
+            font-size: small;
+            align-items: center;
+            padding: 8px;
+            color: white;
+        }
+        .fa{
+            color: white;
+        }
+
+
+
+
+      
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="container-1">
+
+
+        <div class="A001"><img src="edyst.png" height="25px" width="80px"></div>
+        <div class="B001">
+            <ul class="C001">
+                <li><a id="a1" href="#"><img class="E001" src="india.png" alt="india"><label>Pokedex</label><i class="fas fa-caret-down"></i></a>
+                  <ul class="D001">
+                      <li>Low</li>
+                      <li>Medium</li>
+                      <li>Advanced</li>
+                  </ul>
+                </li>
+                <li> <a id="a1" href="#"><label>Video Games</label><i class="fas fa-caret-down"></i></a>
+                <ul class="D001">
+                    
+                    <li>3d games</li>
+                    <li>Arcade games</li>
+                    <li>Racing games</li>
+                    <li>Sports games</li>
+             
+                </ul>
+                </li>
+                <li><a id="a1" href="#">ECard Games</a></li>
+                <li><a id="a1" href="#">Pokemon TV</a></li>
+                <li><a id="a1" href="#">Pokemon Event</a></li>
+                <li><a id="a1" href="#"><label>About Us</label><i class="fas fa-caret-down"></i></a>
+                    <ul class="D001">
+                        <li>Donate us</li>
+                        <li>Contact us</li>
+                        <li>Help Desk</li>
+                        <li>Support us</li>
+                    </ul>
+                </li>
+                <li> <button class="btn1"> Apply </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <section class="home-page">
+        <div class="container-2">
+            <h1 id="b1">WELCOME TO EDYST LEARN CODING</h1>
+            <h3 id="b2">Let's learn web developtment in a fun way</h3>
+            <div class="A002">
+                <div id="b3"><button class="btn2">Apply Here</button></div>
+                <div id="b3"> <button class="btn3"> Register for course</button></div>
+                <div id="b3"><button class="btn4">Here you can learn to build beautiful websites <strong class="link">Learn
+                            more></strong>
+                    </button></div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="pocket-monster-section">
+        <div class="container-3">
+      <div class="A003">
+          <h2 id="c1">What are Pocket Monsters?</h2>
+          <p class="C003">Pokémon is a series of video games developed by Game Freak and published by Nintendo and The Pokémon
+              Company as part of the Pokémon media franchise. Created by Satoshi Tajiri with assistance from Ken
+              Sugimori,the first games released in 1996 in Japan for the Game Boy, and the main series of role-playing
+              video games (RPGs), also referred as the "core series" by their developers
+          </p>
+          <p >Let us know some pokemon types</p>
+      </div>
+
+      <div class="B003">
+          <div>
+              <i class='fas fa-water '></i>
+              <h4 id="c2"> Water</h4>
+              <p>Water is one of the three basic elemental types along with Fire and Grass, which constitute the three
+                  starter Pokémon. This creates a simple triangle to explain the type concept easily to new players.
+                  Water is the most common type with over 100 Pokémon, which are based on a wide variety of fish and
+                  other sea-dwelling creatures.</p>
+          </div>
+
+          <div>
+              <i class='fas fa-fire '></i>
+              <h4 id="c2">Fire</h4>
+              <p>Fire is one of the three basic elemental types along with Water and Grass, which constitute the three
+                  starter Pokémon. This creates a simple triangle to explain the type concept easily to new players.
+                  Fire types are notoriously rare in the early stages of the games so choosing the Fire variation
+                  starter is often a plus.</p>
+
+          </div>
+          <div>
+              <i class='fas fa-leaf '></i>
+              <h4 id="c2">Grass</h4>
+              <p>Grass is one of the three basic elemental types along with Fire and Water, which constitute the three
+                  starter Pokémon. This creates a simple triangle to explain the type concept easily to new
+                  players.Grass is one of the weakest types statistically, with 5 defensive weaknesses and 7 types
+                  that are resistant to Grass moves.</p>
+          </div>
+      </div>
+  </div> 
+
+  </section>
+
+  <section class="container-4">
+    <h2 id="d1"> Statistics on Pokemon Go</h2>
+
+    <div class="A004">
+
+        <div>
+            <h4 id="d2">Statistics of weight loss</h4>
+            <p class="B004">The AR game's potential for weight loss was a big part of that discussion. In the process of getting
+                out their doors and visiting parks, players found they were losing weight almost in spite of
+                themselves. A Reddit Pokémon Go fan won acclaim for reporting that he'd lost 65 pounds between July
+                and December.
+            </p>
+            <img src="weight-loss.jpg">
+        </div>
+
+        <div>
+            <h4 id="d2">Statistics of app downloads</h4>
+            <p class="B004">Pokémon GO is one of the most successful mobile games of all time, breaking records like fastest to
+                earn $100 million and most-downloaded in its first month of release. To date, it has grossed almost
+                $2 billion in revenue and been downloaded 800 million times. Although no longer the global
+                phenomenon it was in 2016, the game remains incredibly popular.</p>
+            <img src="download-app.png">
+        </div>
+    </div>
+
+</section>
+
+<section class="container-5">
+    <h4 id="e1">2020 Pokémon of the Year Revealed</h4>
+
+    <div class="A005">
+        <div  class="B005">
+            <div><img id="e2" src="pokemon1.png"></div>
+            <div class="C005">
+                <h6 class="D005">Greninja</h6>
+                <p>Water/Dark</p>
+                <img id="e3" src="pokemon-logo.png">
+            </div>
+            <div><p>"Greninja is the final evolution of Pokémon X and Y water-type starter Froakie. It has the ability to
+                take on an appearance resembling its trainer. Pokedex says: Greninja creates throwing stars out of
+                compressed water. When it spins them and throws them at high speed, these stars can split metal in
+                two."</p></div>
+        </div>
+
+        <div  class="B005">
+        <div><img id="e2" src="pokemon2.png"></div>
+            <div class="C005">
+                <h6 class="D005">Lucario</h6>
+                <p class="E005">Fighting, Steelr</p>
+                <img id="e3" src="pokemon-logo.png">
+            </div>
+        <div><p>"Lucario is a bipedal, wolf-like Pokémon with blue, cream, and black fur. It is considered to be
+                prideful and loyal to its trainer. Pokedex says: By catching the aura emanating from others, Lucario
+                can read their thoughts and movements."</p></div>
+        </div>
+
+        <div  class="B005">
+        <div><img id="e2" src="pokemon3.jpg"></div>
+            <div class="C005">
+                <h6 class="D005">Mimikyu</h6>
+                <p class="E005">Ghost‎ ‎Fairy</p>
+                <img id="e3" src="pokemon-logo.png">
+            </div>
+        <div> <p>"Mimikyu caused quite a stir for its peculiar looks and sad backstory when it was originally
+                announced for Pokémon Sun and Moon in 2016. Mimikyu is described as a Pokémon who felt so lonely
+                that it decided to wear a rag in order to look like Pikachu, everyone’s favorite Pokémon. Pokedex
+                says: Its actual appearance is unknown. A scholar who saw what was under its rag was overwhelmed by
+                terror and died from the shock."</p></div>
+        </div>
+
+        <div  class="F005">
+            <img id="e2" src="pokemon4.jpg">
+            <div class="C005">
+                <h6 class="D005">Charizard</h6>
+                <p class="E005">Flying, Fire</p>
+                <img id="e3" src="pokemon-logo.png">
+            </div>
+            <p>"Charizard is an orange draconic Pokémon who has a fiery temper. It is the final evolution of
+                Charmander, one of the starter Pokémon for the original game. Pokedex says: Charizard flies around
+                the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything.
+                However, it never turns its fiery breath on any opponent weaker than itself. "</p>
+        </div>
+    </div>
+</section>
+
+<section class="container-6">
+    <h2 id="f1"> Q and A</h2>
+    <p class="A006">Questions Every Pokemon Trainer Should Be Able To Answer</p>
+    <div class="B006">
+    <ol>
+        <li><h4>What Pokemon does Pikachu evolve into?</h4></li>
+        <ul class="D006">
+            <div class="C006"><li> We're sure you know this Electric mouse Pokemon, and you know it quite well. Basic knowledge of
+                Pikachu is essential for every trainer, but you should also be well versed in the rodent's
+                evolutionary chain. Pikachu, mighty as it is, has an even stronger evolved form also capable of
+                generating vast amounts of electricity. Maybe you've bumped into this species in the wild. Either
+                way, this is a question all Pokemon trainers should be able to answer</li></div>
+                <div class="C006"><li> Answer is Raichu</li></div>
+        </ul>
+        <li><h4>What's the most effective Poke Ball in the game?</h4></li>
+        <ul class="D006">
+            <div class="C006"><li>Not all Poke Balls are made equally. There's the basic model you start your journey off with, but
+                progressive upgrades are needed if you're looking to keep up with some of the stronger wild Pokemon
+                who emerge in later routes. If you've made your way through any Pokemon game, you've reached the
+                point where you're presented with the most effective Poke Ball known to man. This is a one shot
+                catch, and no button mashing at all is required.</li></div>
+           <div  class="C006"> <li>Answer is Master Ball</li></div>
+        </ul>
+
+    </ol>
+</div>
+
+</section>
+
+
+<section class="pokemon-battle">
+    <div class="container-7">
+    <h2 id="g1">Pokemon Battles</h2>
+
+    <div  id="g2"><p><strong>Here's a Pokémon Go type chart to get you started on what's effective against
+        what </strong></p></div>
+        <div class="Z007">
+    <div class="A007">
+            <p><strong>Type chart, effectiveness and weakness explained in Pokémon Go</strong></p>
+            <p id="g4">Pokémon battles appear in most forms of Pokémon media, being the central gameplay aspect of the core
+                series games, as well as being a constant focus of the anime.</p>
+            <p id="g4">Pokémon Go's Types are exactly the same as those in the main Pokémon games, but the effect of those
+                type matchups is slightly different: in brief, things like effective or resisted attacks have
+                slightly different multipliers to the main Pokémon games - although a December 2018 update brought
+                them slightly closer in line.</p>
+        </div>
+<div class="C007" >
+        <table>
+            <thead>
+                <th> Type</th>
+                <th>Strong Against</th>
+                <th>Weak Against</th>
+                <th>Resistant To</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Normal </td>
+                    <td> None</td>
+                    <td>Rock, Ghost, Steel</td>
+                    <td> Ghost</td>
+                </tr>
+                <tr>
+                    <td> Fighting</td>
+                    <td> Normal, Rock, Steel, Ice, Dark</td>
+                    <td> Flying, Poison, Psychic, Bug, Ghost, Fairy</td>
+                    <td>Rock, Bug, Dark</td>
+                </tr>
+                <tr>
+                    <td> Flying
+
+                    </td>
+                    <td> Fighting, Bug, Grass
+
+                    </td>
+                    <td>Rock, Steel, Electric
+
+                    </td>
+                    <td>Fighting, Ground, Bug, Grass</td>
+                </tr>
+                <tr>
+                    <td> Poison</td>
+                    <td> Grass, Fairy</td>
+                    <td>Poison, Ground, Rock, Ghost, Steel</td>
+                    <td>Fighting, Poison, Grass, Fairy</td>
+                </tr>
+                <tr>
+                    <td>Ground</td>
+                    <td>Poison, Rock, Steel, Fire, Electric</td>
+                    <td>Flying, Bug, Grass</td>
+                    <td>Poison, Rock, Electric</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <p id="g3">
+            Pokémon Go in 2020 continues to add new features, such the arrival of the Go Battle League, Remote Raids
+            and the trade evolution feature. There are also planned changes to PokéCoins on the way. Meanwhile,
+            coming soon is the Johto Throwback quest.</p>
+    </div>
+       
+    </div>
+</div>
+    <p id="g5">Book your tickets now</p>
+    <div class="B007"><button class="btn5">Buy Now</button></div>
+</section>
+
+<section class="know-more1">
+    
+    <h2 id="i1"> Want to know more about Pokemon?</h2>
+    <div class="A008"><button class="btn6">Click here</button></div>
+
+</div>
+</section>
+
+<section class="pokemon-card">
+    <h2 id="z1">Pokemon Card</h2>
+
+    <div class="cards_hold">
+        <div class="card-c">
+            <div class="card-head">
+                <h1 class="A009"> Greninja</h1>
+                 <div class="B009"><img src="pokemon-card.png"></div>
+
+                <strong><p class="C009">  Ability: Torrent</p></strong>
+                
+            </div>
+            <div class="card-bd">
+                <p class="D009">It is the final evolution of Froakie, the Water-type starter from Kalos.</p>
+            </div>
+        </div>
+   
+</section>
+
+
+<section class="pokemon-trainers">
+    <h4 id="j1">Let's know about pokemon trainers</h4>
+
+    <div class="container-10">
+        <div class="C0010">
+            <img class="A0010" src="pokemon5 .png">
+
+            <div  class="D0010">
+                <h6 id="j2">Ash <br> Ketchum</h6>
+                <p class="E0010">Champion of Orange<br> League</p>
+                <img class="B0010" src="pokemon-logo.png">
+            </div>
+
+            <p>"Ash Ketchum, known as Satoshi in Japan, is a fictional character in the Pokémon franchise owned by
+                Nintendo. He is the protagonist of the Pokémon anime and certain manga series as well as on various
+                merchandise related to the franchise. In Japanese, the character is voiced by Rika Matsumoto, and
+                Hana Takeda. "</p>
+        </div>
+
+        <div  class="C0010">
+            <img class="A0010" src="pokemon6.png">
+
+            <div  class="D0010">
+                <h6 id="j2">Lance</h6>
+                <p class="E0010">Dragon Master</p>
+                <img class="B0010" src="pokemon-logo.png">
+            </div>
+
+            <p>"Lance is a recurring character in Pokémon. He is a user of Dragon-types being the final Elite Four
+                member in Red, Blue and their remakes. In Pokémon Gold, Silver, Crystal and their remakes, he is the
+                Champion.Lance has appeared in the Pokémon series games from Generation I-III. He first appeared in
+                the original Red and Blue games, being the final member of the Elite Four, and again in Generation
+                III's Red and Blue remakes, FireRed and LeafGreen. Lance in the Generation II games differed from
+                the previous though, as he was Pokémon Champion by this time. "</p>
+        </div>
+
+        <div  class="C0010">
+            <img class="A0010" src="pokemon7.png">
+
+            <div  class="D0010">
+                <h6 id="j2">Cynthia</h6>
+                <p class="E0010">Shirona</p>
+                <img class="B0010" src="pokemon-logo.png">
+            </div>
+
+            <p>
+                "Cynthia is a powerful Pokémon trainer and the Champion of the Sinnoh region where Professor
+                Carolina, Cynthia's grandmother, runs the Pokémon Research Lab in Celestic Town. She enjoys visiting
+                the Solaceon Town Ruins. Later, in Pokémon: DP Galactic Battles, she helps fight Team Galactic as
+                well. In the anime, she has a villa in east Unova but in the Pokémon Black and White games, she
+                borrows Caitlin's villa (from the Elite Four). "</p>
+        </div>
+
+
+
+        <div  class="C0010">
+            <img class="A0010" src="pokemon8.png">
+
+            <div  class="D0010">
+                <h6 id="j2">Ipsum lorem</h6>
+                <p class="E0010">Ookido Yukinari Hakase</p>
+                <img class="B0010" src="pokemon-logo.png">
+            </div>
+
+            <p>"Ookido Yukinari Hakaseamuel Oak is most notable for his vast research facility, where he cares for
+                and studies hundreds of Pokémon, including those owned by, but not currently traveling with,
+                Trainers from Pallet Town. He has confidence in his grandson, Gary Oak, but more often joins Ash's
+                mother and friends in cheering on Ash in his competitions. "</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="generation">
+    <h4 id="k1">Generation Cards</h4>
+    <div class="B0011">
+        <div class="card">
+            <div class="C0011">
+                <h1 class="D0011">First generation</h1>
+                <p class="A0011">(1996–1999)</p>
+            </div>
+            <div class="body">
+                <p class="text">The original Pokémon games are Japanese role-playing video games (RPGs) with an
+                    element of strategy, and were created by Satoshi Tajiri for the Game Boy. The Pokémon series
+                    began with the release of Pocket Monsters Red and Green for the Game Boy in Japan. When these
+                    games proved popular, an enhanced Blue version was released sometime after, and the Blue version
+                    was reprogrammed as Pokémon Red and Blue for international release. The original Green version
+                    was not released outside Japan</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="C0011">
+                <h1 class="D0011">Second generation</h1>
+
+                <p class="A0011">(1999–2002)</p>
+            </div>
+            <div class="body">
+                <p class="text">The second generation of Pokémon video games began in 1999 with the Japanese
+                    release of Pokémon Gold and Silver for the Game Boy Color, with Australia and North America
+                    getting the game in October 2000 and European release date of April 2001. Like the previous
+                    generation, an enhanced version, titled Pokémon Crystal, was later released.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="B0011">
+        <div class="card">
+            <div class="C0011">
+                <h1 class="D0011">Third generation</h1>
+
+                <p class="A0011">(2002–2006)</p>
+            </div>
+            <div class="body">
+                <p class="text">
+                    Pokémon entered its third generation with the 2002 release of Pokémon Ruby and Sapphire for Game
+                    Boy Advance and continued with the Game Boy Advance remakes of Pokémon Red and Green, Pokémon
+                    FireRed and LeafGreen (Red and Green representing the original Japanese first generation games;
+                    territories outside Japan instead saw releases of Red and Blue). An enhanced remake of Pokémon
+                    Ruby and Sapphire titled Pokémon Emerald followed after.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="C0011">
+                <h1 class="D0011">Fourth generation</h1>
+
+                <p class="A0011">(2006–2010)</p>
+            </div>
+            <div class="body">
+                <p class="text">In 2006, Japan began the fourth generation of the franchise with the release of
+                    Pokémon Diamond and Pearl for Nintendo DS. The games were released in North America on April 22,
+                    2007 and in Australia on June 21, 2007. The game was released in the UK and Europe on July 27,
+                    2007. Other main series games in the fourth generation include Pokémon Platinum, a director's
+                    cut version of Diamond and Pearl in the same vein as Pokémon Yellow, Crystal, and Emerald.It was
+                    released for the Nintendo DS in Japan on September 13, 2008, in North America on March 22, 2009,
+                    and in Australia and Europe on May 14, 2009 and May 22, 2009
+
+                </p>
+            </div>
+        </div>
+        </div>
+  
+
+</section>
+
+<section class="email-pokemon">
+    <h4 id="l1">Enter your email to subscribe pokemon channel</h4>
+    <div class="A0012">
+        <input class="input" type="email" placeholder="you@example.com" >
+         <button class="B0012">submit</button>
+    </div>
+</section>
+
+<section class="pokemon-games">
+
+    <h4 id="m1">Pokemon games</h4>
+
+    <div class="container12">
+        <div>
+            <h6 id="m2">Pokémon Sleep <i class="fas fa-gamepad"></i></h6>
+            <p class="A0013">Pokémon Sleep is an upcoming mobile game for Android and iOS, as part of the Pokémon series.</p>
+            <div class="C0013"><img class="logo1" src="pokemon-logo1.png"></div>
+            <p class="A0013">Publisher: The Pokémon Company</p>
+        </div>
+
+        <div>
+            <h6 id="m2">Pokémon: Let's Go, Pikachu! <i class="fas fa-gamepad"></i></h6>
+            <p class="A0013">Take a Pokémon™ journey to the Kanto region with your energetic partner, Pikachu!</p>
+            <div class="C0013"><img class="logo2" src="pokemon-logo2.jpg"></div>
+            <p class="A0013">Publishers: Nintendo, The Pokémon Company</p>
+        </div>
+
+        <div>
+            <h6 id="m2">Pokémon GO <i class="fas fa-gamepad"></i></h6>
+            <p  class="A0013">Pokémon Go is a 2016 augmented reality mobile game developed.</p>
+            <div class="C0013"><img class="logo3" src="pokemon-logo3.jpg"></div>
+            <p class="A0013">Developer: Niantic</p>
+        </div>
+
+    </div>
+    <div class="B0013"><button class="btn7">See More Here</button></div>
+
+</section>
+
+<section class="designers">
+    <h4 id="n1">Designers</h4>
+
+    <div class="container13">
+        <div class="A0114">
+            <div class="E0014"><img class="B0014" src="designer1.jpg"></div>
+            <h6 id="n2">Junichi Masuda</h6>
+            <p class="C0014">Japanese video game designer</p>
+            <p class="D0014">"Junichi Masuda is a Japanese video game composer, director, designer, producer, singer, and
+                programmer best known for his work in the Pokémon franchise. He is a member of the Game Freak board
+                of directors, and has been employed at the company since 1989 when he founded it along Satoshi
+                Tajiri and Ken Sugimori "</p>
+        </div>
+
+        <div class="A0115">
+            <div class="E0014"><img class="B0014" src="designer2.jpg"></div>
+            <h6 id="n2">Shigeki Morimoto</h6>
+            <p class="C0014">Game designer</p>
+            <p class="D0014">"Shigeki Morimoto is a game designer and programmer currently working at Game Freak. He has been
+                involved in nearly every main series Pokémon game, since Pokémon Red and Blue Versions where he was
+                a programmer, and the creator of the battle system and the Pokémon "Mew". "</p>
+        </div>
+
+        <div class="A0116">
+            <div class="E0014"><img id="B0014" src="designer3.png" width="220"></div>
+            <h6 id="n2">Ken Sugimori</h6>
+            <p class="C0014"> Japanese video game designer</p>
+            <p class="D0014">"Ken Sugimori is a Japanese video game designer, illustrator, manga artist, and director. He is most
+                famous as the character designer and art director for the Pokémon franchise. Sugimori is also
+                credited with the art direction for other titles, including Pulseman "</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="logos">
+    <h4 id="o1">Logos</h4>
+    <p class="A0015">Pokémon is short for the original Japanese title of Pocket Monsters. Created by. Satoshi Tajiri.
+    </p>
+
+    <div class="container14">
+        <div class="C0015">
+            <img class="B0015" src="pokemon-logo.png">
+            <img class="B0015" src="pokemon-logo.png">
+            <img class="B0015" src="pokemon-logo.png">
+        </div>
+   
+    <div class="C0015">
+            <img class="B0015" src="pokemon-logo.png">
+            <img class="B0015" src="pokemon-logo.png">
+            <img class="B0015" src="pokemon-logo.png">
+        </div>
+    <div class="C0015">
+            <img class="B0015" src="pokemon-logo.png">
+            <img class="B0015" src="pokemon-logo.png">
+            <img class="B0015" src="pokemon-logo.png">
+        </div>
+    </div>
+    </section>
+
+    <section class="know-more2">
+        <h2 id="p1">Want to know more?</h2>
+        <div class="A0016"><button class="btn8">Click Here</button></div>
+    </section>
+
+    <footer>
+        <div class="container-16">
+
+            <div class="A0017">
+                <p>Pokemon Company</p>
+                <p><a href="#">What's New</a></p>
+                <p><a href="#">Guide</a></p>
+                <p><a href="#">Customer Service</a></p>
+                <p><a href="#">About our company</a></p>
+            </div>
+            <div class="A0017">
+                <p>For Companies</p>
+                <p><a href="#">Policy</a></p>
+                <p><a href="#">Terms of use</a></p>
+                <p><a href="#">Privacy</a></p>
+                <p><a href="#">Support</a></p>
+            </div>
+            <div class="A0017">
+                <p>Resources</p>
+                <p><a href="#">Request a Feature</a></p>
+                <p><a href="#">Careers</a></p>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">Support</a></p>
+            </div>
+            <div class="A0017">
+                <p>Social</p>
+                <p> <i class='fab fa-instagram'></i>
+                    <i class='fab fa-facebook-f'></i>
+                    <i class='fab fa-twitter'></i>
+                </p>
+                <p><a href="#">1201 © Poke</a></p>
+                <p> <a href="#">Buy me a coffee</a>
+                    <i class="fa fa-coffee"></i>
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    
+</body>
+</html>
